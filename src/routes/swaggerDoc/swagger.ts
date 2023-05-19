@@ -5,9 +5,9 @@ const apiDocumentation = {
   openapi: '3.0.1',
   info: {
     version: '1.0.0',
-    title: 'backend-boilerplate api Documentation',
-    description: 'backend-boilerplate api Documentation in swagger',
-    termsOfService: 'https://www.linkedin.com/in/zuberkhan034/',
+    title: 'node-otp-authentication : (One-Time Password Login) api Documentation',
+    description: 'NOTE: You can switch between local and production sever by left side [Severs] dropdowns options.',
+    termsOfService: 'https://github.com/ZUBERKHAN034/node-otp-authentication',
     contact: {
       name: 'Zuber Khan',
       email: 'zuberkhan034@gmail.com',
@@ -16,12 +16,12 @@ const apiDocumentation = {
   },
   servers: [
     {
-      url: 'http://localhost:8002/',
-      description: 'Local Server',
+      url: 'https://node-otp-authentication.onrender.com/', // replace it with deployed server url
+      description: 'Production Server',
     },
     {
-      url: 'http://localhost:8002/', // replace it with deployed server url
-      description: 'Production Server',
+      url: 'http://localhost:8002/',
+      description: 'Local Server',
     },
   ],
   tags: tags,
