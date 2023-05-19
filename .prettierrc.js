@@ -1,3 +1,5 @@
-module.exports = {
-  ...require('gts/.prettierrc.json')
-}
+import prettierrc from 'gts/.prettierrc.json';
+
+export default {
+  ...prettierrc
+};
