@@ -1,7 +1,5 @@
 const constants = {
   ENUMS: {
-    FE_BASE_URL: process.env.FE_BASE_URL || 'http://localhost:5173',
-
     ORDER: {
       ASC: 'asc',
       DESC: 'desc',
@@ -26,11 +24,6 @@ const constants = {
       OTHER: 'other',
     },
 
-    FILE_FORMAT: {
-      PNG: '.png',
-      SVG: '.svg',
-    },
-
     LOGIN_TYPE: {
       GOOGLE: 'GOOGLE',
       CUSTOM: 'CUSTOM',
@@ -40,26 +33,6 @@ const constants = {
       OTP_DEFAULT_EXPIRY: 5,
       OTP_REQUEST_EXPIRY: 1,
       USER_BLOCK_EXPIRY: 60,
-    },
-
-    CHECKOUT_MODE: {
-      PAYMENT: 'payment',
-      SUBSCRIPTION: 'subscription',
-      SETUP: 'setup',
-    },
-
-    PAYMENT_STATUS: {
-      FAILED: 'failed',
-      PAID: 'paid',
-    },
-
-    PAYMENT_DESCRIPTION: {
-      SUBSCRIPTION: 'subscription',
-      PURCHASE: 'purchase',
-    },
-
-    TOKENS: {
-      ACCESS_TOKEN: 'accessToken',
     },
   },
 
@@ -113,34 +86,6 @@ const constants = {
     1: 'CONNECTED',
     2: 'CONNECTING',
     3: 'DISCONNECTING',
-  },
-
-  AWS: {
-    BUCKET_TYPE: {
-      PRIVATE: `${process.env.S3_BUCKET_PRIVATE}`,
-      PUBLIC: `${process.env.S3_BUCKET_PUBLIC}`,
-    },
-
-    ACL_TYPE: {
-      PRIVATE: 'private',
-      PUBLIC: 'public-read',
-    },
-
-    MIME_TYPE: {
-      IMAGE: {
-        SVG: 'image/svg+xml',
-        PNG: 'image/png',
-      },
-    },
-
-    ASSET_FOLDER: {
-      PRIVATE: {
-        USER: `${process.env.S3_FOLDER_PARENT}/user`,
-      },
-      PUBLIC: {
-        USER: `${process.env.S3_FOLDER_PARENT}/user`,
-      },
-    },
   },
 
   SEND_IN_BLUE: {

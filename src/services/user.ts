@@ -5,12 +5,11 @@ import { RespError } from '../lib/wr_response';
 import { IUser } from '../db/models/user';
 import jwt from 'jsonwebtoken';
 import utility from '../lib/utility';
-import Base from './base';
 import constants from '../common/constants';
 import moment from 'moment';
 import Emailer from '../common/emailer';
 
-export default class UserService extends Base {
+export default class UserService {
   private userRepo = new UserRepository();
   private emailer = new Emailer(process.env.SEND_IN_BLUE_API_KEY, {
     name: constants.SEND_IN_BLUE.SENDER_NAME,
